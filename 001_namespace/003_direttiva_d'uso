@@ -1,0 +1,20 @@
+//In questo main il namespace SPAZIO_DUE viene acceduto tramite l'operatore di scoping
+//Mentre il namespace SPAZIO_UNO viene acceduto tramite la direttiva d'uso
+
+#include "Lib_UNO.h"
+#include "Lib_DUE.h"
+
+//Direttiva d'uso
+//Rende visibili tutti i nomi del namespace SPAZIO_UNO
+using namespace SPAZIO_UNO;
+
+void funzione(){
+
+//Non serve mettere SPAZIO_UNO:: prima della dichiarazione
+  Complex var1;
+  f(var1);
+ 
+  SPAZIO_DUE::Complex var2;
+  SPAZIO_DUE::g(var2); 
+  
+}
