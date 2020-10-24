@@ -1,0 +1,9 @@
+namespace newSpace{
+  struct Complex{
+    ...
+  };
+  
+  double module(Complex);
+  
+  ... // altri membri del namespace newSpace
+}
