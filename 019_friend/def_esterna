@@ -1,0 +1,11 @@
+// nel file "bolletta.cpp"
+ostream& operator<<(ostream& os, const bolletta& b){
+    os << "TELEFONATE IN BOLLETTA" << endl;
+    bolletta::nodo* p = b.first; // per amicizia!
+    int i= 1;
+    while(p){
+        os << i++ << ") " << p->info << endl;
+        p = p->next;
+    } 
+    return os;
+}
