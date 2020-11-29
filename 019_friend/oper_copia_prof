@@ -1,0 +1,10 @@
+ostream& operator<<(ostream& os, bolletta b){
+    // NOTA BENE: b è passato per valore
+    os << "TELEFONATE IN BOLLETTA" << endl;
+    int i= 1;
+    while(!b.Vuota()){
+        os << i << ") " << b.Estrai_Una() << endl;
+        i++;
+    }
+    return os;
+}
