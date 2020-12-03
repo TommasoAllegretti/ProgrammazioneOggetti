@@ -1,0 +1,19 @@
+class contenitore{
+friend class iteratore; // dichiarazione di amicizia
+private:
+        class nodo{         
+            ...
+        };
+
+        nodo* first;    
+public:
+    class iteratore{
+    private:
+        contenitore::nodo* punt;    // per amicizia
+        ...
+    };  
+    
+    contenitore();
+    void aggiungi_in_nodo(int x);
+
+};
