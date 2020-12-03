@@ -1,0 +1,13 @@
+class iteratore{
+private:
+    contenitore::nodo* punt;    // nodo puntato dall'iteratore
+
+public:
+    bool operator==(iteratore i) const{
+        return punt == i.punt;
+    }
+    iteratore& operator++() {   // operator++ prefisso
+        if (punt) punt = punt->next;
+        return *this;
+    }
+};
