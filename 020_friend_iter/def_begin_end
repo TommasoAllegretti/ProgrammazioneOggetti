@@ -1,0 +1,15 @@
+contenitore::iteratore contenitore::begin() const{
+    iteratore aux;
+    aux.punt = first;       // per amicizia
+    return aux;
+}
+
+contenitore::iteratore contenitore::end() const{
+    iteratore aux;
+    aux.punt = 0;           // per amicizia
+    return aux;
+}
+
+int& contenitore::operator[](contenitore::iteratore it) const{
+    return it.punt->info;   // per amicizia
+}
