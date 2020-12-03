@@ -1,13 +1,13 @@
 class contenitore{
 private:
         class nodo{
-        public:
+        public:         // public per convenienza, nessuna influenza esterna
             int info;
             nodo* next;
             nodo(int x, nodo* p) : info(x), next(p) {}
         };
 
-        nodo* first;
+        nodo* first;    // puntatore al primo nodo della lista
 
 public:
     contenitore(): first(0) {}
