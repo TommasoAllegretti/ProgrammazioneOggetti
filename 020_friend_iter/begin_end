@@ -1,0 +1,20 @@
+class contenitore{
+friend class iteratore; // dichiarazione di amicizia
+private:
+        class nodo{         
+            ...
+        };
+
+        nodo* first;    
+public:
+    class iteratore{
+        friend class contenitore;
+        ...
+    };  // Attenzione: la dichiarazione della classe iteratore
+        // deve precedere le dichiarazioni dei metodi che usano tale 
+        // tipo nella loro segnatura
+    ...
+    iteratore begin() const;
+    iteratore end() const;
+    int& operator[] (iteratore) const;
+};
