@@ -1,0 +1,16 @@
+class contenitore{
+private:
+        class nodo{
+        public:
+            int info;
+            nodo* next;
+            nodo(int x, nodo* p) : info(x), next(p) {}
+        };
+
+        nodo* first;
+
+public:
+    contenitore(): first(0) {}
+    void aggiungi_in_testa(int x) { first = new nodo(x, first); }
+
+};
